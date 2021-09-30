@@ -26,7 +26,7 @@
                   <button class="btn btn-info" v-on:click="BuyNFT()">
                     <fa icon="shopping-cart" /> Buy NFT
                   </button>
-                  <p>(Loading... please wait, devnets only)</p>
+                  <p>(Loading... please wait, TestNet)</p>
                 </div>
               </div>
             </td>
