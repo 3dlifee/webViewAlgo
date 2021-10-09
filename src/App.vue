@@ -57,9 +57,9 @@ export default {
     async WalletConnect() {
       try {
         this.acc = await stdlib.getDefaultAccount();
-        this.acc2 = await stdlib.newAccountFromMnemonic(
-          "alarm alarm deposit air alarm  deposit alarm alarm alarm alarm alarm alarm alarm alarm alarm alarm alarm alarm  deposit  deposit alarm  deposit  deposit  alarm  air"
-        );
+        this.acc2 = await stdlib.connectAccount({
+          addr: "HZ57J3K46JIJXILONBBZOHX6BKPXEM2VVXNRFSUED6DKFD5ZD24PMJ3MVA",
+        });
         this.addr = stdlib.formatAddress(this.acc.getAddress());
         this.balAtomic = await stdlib.balanceOf(this.acc);
         this.bal = String(stdlib.formatCurrency(this.balAtomic, 4));
